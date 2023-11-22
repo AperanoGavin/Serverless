@@ -27,3 +27,7 @@ benchmarks/graphs
 # Jetbrains
 .idea/
 *.iml
+
+#env
+.env
+.env.test
