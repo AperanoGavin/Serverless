@@ -1,11 +1,10 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize')
 
-const INTERNAL_DATABASE_URL = process.env.INTERNAL_DATABASE_URL
 
 // Database
 const sequelize = new Sequelize(
-  INTERNAL_DATABASE_URL,
+  process.env.INTERNAL_DATABASE_URL,
   {
     dialect: 'postgres',
     dialectOptions: {
